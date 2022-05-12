@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .selectImg {
+  display: none;
+}
+
+.container .row .image {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+.container .row .image .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  color: red;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.container .dragDrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .dropZone {
+  height: 80px;
+  width: 400px;
+  border: 3px dashed #000;
+}
+
+.container .dropZone span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container .clickBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  font-weight: bold;
+  background-color: beige;
+  border: 3px dashed #000;
+  border-left: none;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.container .clickBtn:hover {
+  color: antiquewhite;
+  background-color: burlywood;
+}
+
+.container table tbody tr td {
+  width: 10%;
+  height: 200px;
+  line-height: 200px;
+}
+
+.container table tbody tr .delete {
+  cursor: pointer;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  font-weight: bold;
+}
+
+.container table tbody tr .delete:hover {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

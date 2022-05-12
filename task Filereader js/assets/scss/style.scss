@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    .selectImg{
+        display: none;
+    }
+    .row{
+        .image{
+            height: 150px;
+            object-fit: contain;
+            position: relative;
+            .icon{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 1;
+                color: blue;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+    .dragDrop{
+        display: flex;
+    }
+    .dropZone{
+        height: 80px;
+        width: 400px;
+        border: 3px dashed #000;
+        span{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    .clickBtn{
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding:15px 20px;
+
+        font-weight: bold;
+        background-color: beige;
+
+        border: 3px dashed #000;
+        border-left: none;
+
+        cursor: pointer;
+        transition: .2s ease-in;
+        &:hover{
+            color: antiquewhite;
+            background-color: burlywood;
+        }
+    }
+    table{
+        tbody{
+            tr{
+                td{
+                    width: 10%;
+                    height: 200px;
+                    line-height: 200px;
+                }
+                .delete{
+                    cursor: pointer;
+                    transition: .2s ease-in;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: blue;
+                    }
+                }
+               
+            }
+        }
+    }
+}
